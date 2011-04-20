@@ -1,0 +1,38 @@
+es:
+  lang: 'es'
+
+  head:
+    title: "Saint Vallen Tecnología"
+    description: "Importación, Proyectos y Inteligencia de Negocios"
+    keywords: "importación, proyectos, inteligencia de negocios, productos especializados, soluciones, alto valor agregado"
+    
+  logo:
+    message: "Importación, Proyectos y Inteligencia de Negocios"
+
+  contact:
+    title: Contacto
+    name: Nombre
+    name_placeholder: Nombre Completo
+    name_required: Informe su nombre para continuar.
+    email_required: Informe su email para continuar.
+    invalid_email: Ese formato de email no es válido. Intenta nuevamente.
+    message_required: Escribe su mensage para continuar.
+    email_placeholder: usuario@dominio.com
+    phone: Teléfono
+    phone_placeholder: Teléfono con DDI
+    phone_required: Informe su teléfono con DDI para continuar.
+    message: Mensage
+    send:  Envía
+    wait: Aguarde...
+    message_placeholder: Escribe su mensage
+    send_ok_title: Mensage enviada con éxito!
+    send_ok_message: Gracias. Retornaremos su contact lo más pronto possible.
+    send_error_title: Ooops. Error al enviar su mensage.
+    send_error_message: "Intenta nuevamente o envíenos un email para contato@saintvallen.com"
+    send_another_message: Nueva mensage
+    try_again: Intentar de nuevo.
+
+  footer:
+    phone: +55 (55) 2103-4629
+    email: contato@saintvallen.com
+    copyright: Saint Vallen Tecnología 2011 ©

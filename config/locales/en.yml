@@ -1,0 +1,38 @@
+en:
+  lang: 'en'
+  
+  head:
+    title: "Saint Vallen Technology"
+    description: "Import, Projects and Business Intelligence"
+    keywords: "import, projects, business intelligence, specialized products, solutions, high value"
+  
+  logo:
+    message: "Import, Projects and Business Intelligence"
+  
+  contact:
+    title: Get in contact
+    name: Name
+    name_placeholder: Your full name
+    name_required: You must fill in your name to post.
+    email_required: You must fill in your email to post.
+    invalid_email: Invalid email format. Please try again.
+    email_placeholder: user@domain.com
+    phone: Phone
+    phone_placeholder: Your Phone
+    phone_required: You must fill in your phone to post.
+    message_required: You must write a message to post.
+    message: Message
+    send: Send
+    wait: Please wait...
+    message_placeholder: Write your message
+    send_ok_title: Message sent successfully!
+    send_ok_message: Thank you. We'll get in touch soon.
+    send_error_title: Ooops. Something went wrong.
+    send_error_message: "Please try again or, if you prefer, send us an email at contact@saintvallen."
+    send_another_message: Send another message.
+    try_again: Try again.
+
+  footer:
+    phone: +55 (55) 2103-4629
+    email: contato@saintvallen.com
+    copyright: Saint Vallen Technology 2011 ©

@@ -1,0 +1,58 @@
+<div id="contact">
+  <div class="wrapper">
+  <h2><%= t('contact.title') %></h2>
+  
+  <div id="contact_us_success" style="display:none">
+    <h3><%= t('contact.send_ok_title') %></h3>
+    <p><%= t('contact.send_ok_message') %></p>
+    <p class="send_another"><%= link_to t('contact.send_another_message'), "#" %>
+  </div>
+  
+  <div id="contact_us_failure" style="display:none">
+    <h3><%= t('contact.send_error_title') %></h3>
+    <p><%= t('contact.send_error_message') %></p>
+    <p class="send_another"><%= link_to t('contact.try_again'), "#" %>
+  </div>
+
+  <% form_tag('/contact', {:id => "contact_us", :name=> "contact_form"}) do -%>
+    <%= token_tag %>
+      <div id="contact_us_content">
+        
+        <%= field_set_tag do %>
+          <%= label_tag 'contact_us_name', t('contact.name') %>
+          <br />
+          <%= text_field_tag 'contact_us_name', nil, :name => :name, :placeholder => t('contact.name_placeholder') %>
+          <div id="contact_us_name_required"><%= t('contact.name_required') %></div>
+        <% end %>
+        
+        <%= field_set_tag do %>
+          <%= label_tag 'contact_us_email', 'Email' %>
+          <br />
+          <%= text_field_tag 'contact_us_email', nil, :name => :email, :type => :email, :placeholder => t('contact.email_placeholder') %>
+          <div id="contact_us_email_required"><%= t('contact.email_required') %></div>
+          <div id="contact_us_email_invalid"><%= t('contact.invalid_email') %></div>
+        <% end %>
+        
+        <%= field_set_tag do %>
+          <%= label_tag 'contact_us_phone', t('contact.phone') %>
+          <br />
+          <%= text_field_tag 'contact_us_phone', nil, :name => :phone, :placeholder => t('contact.phone_placeholder') %>
+          <div id="contact_us_phone_required"><%= t('contact.phone_required') %></div>
+        <% end %>
+        
+        <%= field_set_tag do %>
+          <%= label_tag 'contact_us_message', t('contact.message') %>
+          <br />
+          <%= text_area_tag 'contact_us_message', nil, :name => :message, :rows => 4, :placeholder => t('contact.message_placeholder') %>
+          <div id="contact_us_message_required"><%= t('contact.message_required') %></div>
+        <% end %>
+        
+        <%= field_set_tag nil, :class => "submit_button" do %>
+          <%= submit_tag t('contact.send'), :id => "send_button", :"data-wait" => t('contact.wait'), :"data-send" => t('contact.send'), :form => :contact_form %>
+        <% end %>
+        
+      </div>
+        
+  <% end -%>
+  </div>
+</div>

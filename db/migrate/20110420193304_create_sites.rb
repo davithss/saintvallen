@@ -1,7 +1,10 @@
 class CreateSites < ActiveRecord::Migration
   def self.up
     create_table :sites do |t|
-
+      t.string :name
+      t.string :email
+      t.string :phone
+      
       t.timestamps
     end
   end

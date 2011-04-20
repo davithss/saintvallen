@@ -48,7 +48,7 @@
         <% end %>
         
         <%= field_set_tag nil, :class => "submit_button" do %>
-          <%= submit_tag t('contact.send'), :id => "send_button", :"data-wait" => t('contact.wait'), :"data-send" => t('contact.send'), :form => :contact_form %>
+          <button id="send_button", data-wait="<%= t('contact.wait') %>", data-send="<%= t('contact.send') %>", form="contact_form", type="submit"><%= t('contact.send') %></button>
         <% end %>
         
       </div>

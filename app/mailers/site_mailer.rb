@@ -1,5 +1,5 @@
 class SiteMailer < ActionMailer::Base
-  default :to => "contato@saintvallen.com"
+  default :to => "lvalente@saintvallen.com"
   
   def contact(params)
     mail(:from => "#{params[:name]} <#{params[:email]}>", :subject => "[Saint Vallen] Contato pelo site",
